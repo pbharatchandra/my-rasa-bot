@@ -1,0 +1,180 @@
+version: "3.1"
+rules:
+- rule: Respond to bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# --- NEW, SIMPLER RULES FOR COURSE LOOKUPS ---
+
+- rule: Get course details when entity is present
+  steps:
+  - intent: ask_course_details
+    entities:
+    - course
+  - action: action_show_course_info
+
+- rule: Get course fees when entity is present
+  steps:
+  - intent: ask_fees
+    entities:
+    - course
+  - action: action_show_course_info
+
+- rule: Get course duration when entity is present
+  steps:
+  - intent: ask_duration
+    entities:
+    - course
+  - action: action_show_course_info
+
+- rule: Get course level when entity is present
+  steps:
+  - intent: ask_level
+    entities:
+    - course
+  - action: action_show_course_info
+
+- rule: Get course admission info when entity is present
+  steps:
+  - intent: ask_admission
+    entities:
+    - course
+  - action: action_show_course_info
+
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: action_generative_fallback
+  # - action: action_log_fallback
+
+
+# ADD THIS ENTIRE BLOCK TO THE END OF YOUR rules.yml FILE
+
+- rule: Respond to questions about NIST
+  steps:
+  - intent: ask_about_nist
+  - action: utter_about_nist
+
+- rule: Respond to general course details questions
+  condition:
+    # This rule will only run if the 'course' slot is empty (not set).
+  - slot_was_set:
+    - course: null
+  steps:
+  - intent: ask_course_details
+  - action: utter_course_details
+
+- rule: Respond to thank you
+  steps:
+  - intent: thankyou
+  - action: utter_you_are_welcome
+- rule: Respond to affirm
+  steps:
+  - intent: affirm
+  - action: utter_ack_affirm
+
+- rule: Respond to deny
+  steps:
+  - intent: deny
+  - action: utter_ack_deny
+- rule: Respond to greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to PhD admission questions
+  steps:
+  - intent: ask_phd_admission
+  - action: utter_phd_admission
+
+- rule: Respond to placement questions
+  steps:
+  - intent: ask_placements
+  - action: utter_placements
+
+- rule: Respond to contact questions
+  steps:
+  - intent: ask_contact
+  - action: utter_contact
+
+- rule: Respond to campus facility questions
+  steps:
+  - intent: ask_campus_facilities
+  - action: utter_campus_facilities
+
+- rule: Respond to hostel questions
+  steps:
+  - intent: ask_about_hostels
+  - action: utter_about_hostels
+
+- rule: Respond to sports questions
+  steps:
+  - intent: ask_about_sports_facilities
+  - action: utter_about_sports_facilities
+
+- rule: Respond to research questions
+  steps:
+  - intent: ask_research
+  - action: utter_research
+
+- rule: Respond to achievement questions
+  steps:
+  - intent: ask_achievements
+  - action: utter_achievements
+
+- rule: Respond to event questions
+  steps:
+  - intent: ask_events
+  - action: utter_events
+
+- rule: Respond to convocation questions
+  steps:
+  - intent: ask_about_convocation
+  - action: utter_about_convocation
+
+- rule: Respond to MOU questions
+  steps:
+  - intent: ask_about_mou
+  - action: utter_about_mou
+
+- rule: Respond to club questions
+  steps:
+  - intent: ask_about_clubs
+  - action: utter_about_clubs
+
+- rule: Respond to alumni questions
+  steps:
+  - intent: ask_alumni
+  - action: utter_alumni
+
+- rule: Respond to alumni award questions
+  steps:
+  - intent: ask_alumni_award
+  - action: utter_alumni_award
+
+- rule: Respond to testimonial questions
+  steps:
+  - intent: ask_testimonials
+  - action: utter_testimonials
+
+- rule: Respond to anti-ragging questions
+  steps:
+  - intent: anti_ragging
+  - action: utter_anti_ragging
+
+- rule: Respond to counseling service questions
+  steps:
+  - intent: counseling_service
+  - action: utter_counseling_service
+
+- rule: Respond to FDP info questions
+  steps:
+  - intent: fdp_info
+  - action: utter_fdp_info
+
+- rule: Respond to workshop info questions
+  steps:
+  - intent: workshops_info
+  - action: utter_workshops_info

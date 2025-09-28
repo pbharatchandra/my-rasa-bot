@@ -1,0 +1,156 @@
+version: "3.1"
+
+intents:
+  - thankyou
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - ask_about_nist
+  - ask_admission
+  - ask_course_details
+  - ask_fees
+  - ask_phd_admission
+  - ask_placements
+  - ask_contact
+  - ask_campus_facilities
+  - ask_about_hostels
+  - ask_about_sports_facilities
+  - ask_research
+  - ask_achievements
+  - ask_events
+  - ask_about_convocation
+  - ask_about_mou
+  - ask_about_clubs
+  - ask_alumni
+  - ask_alumni_award
+  - ask_testimonials
+  - out_of_scope
+  - nlu_fallback
+  - anti_ragging
+  - counseling_service
+  - fdp_info
+  - workshops_info
+  - ask_duration
+  - ask_level
+
+entities:
+  - course
+  - entrance_exam
+
+slots:
+  course:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: course
+  course_name:
+    type: text
+    mappings: []
+  course_duration:
+    type: text
+    mappings: []
+  course_level:
+    type: text
+    mappings: []
+  course_admission:
+    type: text
+    mappings: []
+  course_fee:
+    type: text
+    mappings: []
+
+responses:
+  utter_ack_deny:
+  - text: "Okay, cancelled."
+  utter_ack_affirm:
+  - text: "Got it!"
+  utter_you_are_welcome:
+    - text: "You're welcome! Is there anything else I can help you with?"
+  utter_nlu_fallback:
+    - text: "I didn't quite understand that. Could you please rephrase your question about NIST University?"
+    - text: "I'm not sure what you mean. Can you ask that in a different way?"
+    - text: "I'm not sure what you mean. Can you try asking in a different way?"
+  utter_default:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase your question about NIST University?"
+  utter_greet:
+    - text: "Hello! I’m your NIST admission assistant. How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! Wishing you the best for your future."
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa. I'm here to provide information about NIST University."
+  utter_out_of_scope:
+    - text: "I'm sorry, I can only provide information about NIST University. Is there anything else I can help you with?"
+  utter_about_nist:
+    - text: "NIST University, founded in 1996 in Berhampur, Odisha, is a premier institution focused on technical and professional education, with a strong emphasis on research and innovation."
+  utter_admission:
+    - text: "Admissions are through NISTEE, JEE (for B.Tech), GATE (for M.Tech), CAT/MAT (for MBA), and merit-based (for BCA, M.Sc). You can apply via https://admission.nist.edu."
+  utter_course_details:
+    - text: |
+        NIST offers a wide range of programs:
+        - B.Tech (CSE, IT, AI & ML, Data Science, ECE, Civil, EE, EEE, ME)
+        - BCA, M.Sc, MBA, MCA, M.Tech, and PhD programs.
+        Which specific area are you interested in?
+  utter_fees:
+    - text: "The fee depends on the program. For example, B.Tech CSE is ₹1,80,000 (1st year) and MBA is ₹1,51,000 (1st year). Do you want to know the fee for a specific course?"
+  utter_phd_admission:
+    - text: "We invite applications for Ph.D. programs in Engineering, Sciences, and Management. Candidates need a Master’s degree with at least 55% marks. You can find more details on our website."
+  utter_placements:
+    - text: "💼 NIST has a strong placement record with companies like PwC, Accenture, and TCS. For more details, visit our Career Development Cell: https://nist.edu/career-development.php"
+  utter_contact:
+    - text: |
+        📍 NIST University, Institute Park, Berhampur, Odisha, India
+        📞 Helpline: +91 7205326478 / +91 7205336478 / +91 8093556902
+        📧 admission@nist.edu
+  utter_campus_facilities:
+    - text: "🏫 The NIST campus includes academic buildings, labs, hostels, a cafeteria, a library, a gym, and sports facilities. Explore more here: https://nist.edu/campus.php"
+  utter_about_hostels:
+    - text: "Our campus includes well-maintained hostels to provide accommodation for students, contributing to a vibrant residential life."
+  utter_about_sports_facilities:
+    - text: "At NIST, we recognize the central role of sports. We have various facilities to teach values like fairness, team-building, and discipline."
+  utter_research:
+    - text: "Research and development is critical at NIST. Our research spans emerging areas like renewable energy and AI, with several dedicated research groups."
+  utter_achievements:
+    - text: "NIST University is recognized by the UGC and has achieved high rankings for internships and academic excellence, reflecting our commitment to quality education."
+  utter_events:
+    - text: "We regularly host workshops, conferences, and cultural events. Please check the 'Events' section on our website for the latest happenings."
+  utter_about_convocation:
+    - text: "🎓 The NIST University Convocation is a momentous annual occasion celebrating the academic achievements of our graduating students. You can find more info at https://nist.edu/convocation/"
+  utter_about_mou:
+    - text: "NIST University actively collaborates with industry and defence, signing MoUs with organizations like the Army Air Defence College (AADC) and ExcelR Edtech."
+  utter_about_clubs:
+    - text: "Club activities at NIST supplement academics, offering an opportunity for students to display their talents and develop team skills."
+  utter_alumni:
+    - text: "We are proud of our exceptional alumni who have excelled globally. You can learn more at https://alumni.nist.edu/"
+  utter_alumni_award:
+    - text: "🏆 We honor our alumni with the NIST Distinguished Alumni Award (NDAA). Nominations for 2025 are open until January 5th. Nominate here: https://alumni.nist.edu/nominationform.php"
+  utter_testimonials:
+    - text: "Our students have great things to say! For example, N Budhismita says, 'I am grateful to NIST for the valuable education and opportunities it has offered me.'"
+  utter_please_rephrase:
+    - text: "Sorry, I don't have an answer for that right now. This chatbot is still in beta. Could you please rephrase?"
+  utter_anti_ragging:
+    - text: "NIST has a zero-tolerance policy towards ragging and maintains a ragging-free campus. We have an active anti-ragging committee to ensure student safety."
+  utter_counseling_service:
+    - text: "NIST provides professional counseling services to support students' mental health and well-being, helping them manage academic stress and personal challenges."
+  utter_fdp_info:
+    - text: "We frequently organize Faculty Development Programs (FDPs), including AICTE-sponsored ATAL FDPs, to help faculty enhance their teaching and research skills. Please check our website for the latest schedule."
+  utter_workshops_info:
+    - text: "NIST conducts various workshops on topics like robotics, AI, and full-stack development to provide students with hands-on training. You can find details about upcoming workshops on the university's event page."
+  utter_course_info:
+    - text: "Here is the information for the {course_name}:\n- Level: {course_level}\n- Duration: {course_duration}\n- Admission: {course_admission}\n- Annual Fee: {course_fee}"
+  utter_course_duration:
+    - text: "The duration for the {course_name} is {course_duration}."
+  utter_course_fee:
+    - text: "The annual fee for the {course_name} is: {course_fee}."
+  utter_course_admission:
+    - text: "Admission to the {course_name} is through {course_admission}."
+  utter_course_level:
+    - text: "The {course_name} is a {course_level} level program."
+  utter_course_not_found:
+    - text: "I'm sorry, I couldn't find detailed information for that specific course. Could you please try rephrasing or checking our official website?"
+actions:
+  - action_generative_fallback
+  - action_show_course_info
+# - action_log_fallback

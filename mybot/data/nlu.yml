@@ -1,0 +1,288 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hii
+    - hello
+    - hey there
+- intent: thankyou
+  examples: |
+    - thanks
+    - thank you
+    - thanks for your help
+    - thanks for your response
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - never
+    - not really
+    - nope
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+- intent: ask_about_nist
+  examples: |
+    - What is NIST?
+    - Tell me about NIST University
+    - nist
+    - nist university
+- intent: ask_course_details
+  examples: |
+    - What academic programs are available?
+    - What are the different colleges?
+    - courses
+    - cources
+    - coursces
+    - Tell me about the [B.Tech in CSE](course) program
+    - What about the [MBA](course) program?
+    - How is the [M.Tech in VLSI](course) program?
+    - Tell me about courses
+    - Which B.Tech specializations are available?
+    - Show me MSc options
+    - What postgraduate courses are available?
+    - academic programs
+    - btech courses
+    - mtech programs
+    - phd programs
+- intent: ask_phd_admission
+  examples: |
+    - How can I apply for a PhD?
+    - I need help with admission
+    - How to apply for admission?
+    - Tell me about the PhD program
+    - What is the eligibility for PhD?
+    - admission for doctoral program
+    - info on your doctoral programs
+- intent: ask_placements
+  examples: |
+    - How are the placements?
+    - Tell me about the career development cell
+    - What is the highest package?
+    - companies that come for placement
+    - placement cell details
+    - Do you provide internships?
+    - campus recruitment
+    - job offers for NIST students
+- intent: ask_campus_facilities
+  examples: |
+    - What facilities are available on campus?
+    - Tell me about the campus infrastructure
+    - Does the college have hostels and sports?
+- intent: ask_about_hostels
+  examples: |
+    - Tell me about the campus hostels
+    - What is the accommodation like?
+- intent: ask_about_sports_facilities
+  examples: |
+    - What about sports?
+    - Are there sports facilities?
+- intent: ask_research
+  examples: |
+    - Tell me about R&D and innovation at NIST
+    - What are the research groups?
+    - tell me about research at NIST
+    - research centers
+    - incubation center
+- intent: ask_achievements
+  examples: |
+    - What are some of your recent achievements?
+    - Tell me about awards and UGC recognition
+- intent: ask_alumni_award
+  examples: |
+    - Tell me about the alumni award
+    - How to nominate for alumni award?
+    - Distinguished Alumni Award details
+    - what is the alumni award?
+    - tell me about the NDAA
+- intent: ask_events
+  examples: |
+    - What are the latest events and happenings?
+    - Any recent announcements?
+    - upcoming events
+    - nist celebrations
+    - idea to impact session
+- intent: ask_about_convocation
+  examples: |
+    - Tell me about the convocation ceremony
+    - When is the convocation?
+    - graduation ceremony details
+- intent: ask_about_mou
+  examples: |
+    - I heard about a collaboration with the Army, can you tell me more?
+    - Tell me about your MoUs
+    - What is the partnership with ExcelR?
+- intent: ask_about_clubs
+  examples: |
+    - What student clubs are there at NIST?
+    - Tell me about club activities
+- intent: ask_alumni
+  examples: |
+    - Tell me about the alumni network
+    - Is there an alumni award?
+    - tell me about the nist alumni
+    - tell me about the nist alumni
+    - what is the alumni association like?
+    - who are some of your notable alumni?
+    - can you share info on past students?
+    - tell me about nist university's alumni
+    - alumni information
+- intent: ask_testimonials
+  examples: |
+    - What do students say about NIST?
+    - Can you show me some testimonials?
+- intent: ask_fees
+  examples: |
+    - What is the fee for [B.Tech CSE](course)?
+    - How much is [MBA](course) fee?
+    - Fee structure for [MCA](course)
+    - What is the annual fee for [M.Tech](course) programs?
+    - Tell me about [PhD](course) fee
+    - What is the tuition cost for the [BCA](course) program?
+    - Show me the fee structure for [B.Tech](course)
+    - How much does it cost for an [MSc in Data Science](course)?
+    - Are there any scholarships?
+    - What are the fees?
+    - how much for a [PhD](course)?
+    - tuition fees
+    - fee for [CSE](course)  # <--- Add this
+    - [CSE](course) fee     # <--- Add this
+    - cost of [B.Tech](course) # <--- Add this
+    - how much is [MBA](course) # <--- Add this
+- intent: ask_admission
+  examples: |
+    - How can I get admission?
+    - What is the admission process?
+    - Is admission based on [JEE](entrance_exam)?
+    - Do you accept [GATE](entrance_exam) for M.Tech?
+    - How do I get admission for [ECE](course)?
+    - admission criteria for [civil engineering](course)
+    - what is the process for [mca](course) admission
+    - what are the admission requirements?
+    - how do I apply for the university? 
+- intent: ask_contact
+  examples: |
+    - How can I contact NIST?
+    - Give me admission helpline number
+    - What is the address of NIST?
+- intent: anti_ragging
+  examples: |
+    - anti ragging policy
+    - ragging rules
+    - report ragging
+- intent: counseling_service
+  examples: |
+    - counseling service
+    - stress management
+    - mental health support
+- intent: fdp_info
+  examples: |
+    - details of faculty development program
+    - fdp info
+    - upcoming fdp
+    - tell me about ATAL FDP
+- intent: workshops_info
+  examples: |
+    - workshops at NIST
+    - hands-on training programs
+    - robotics workshop
+    - full stack development workshop
+# In nlu.yml, add this lookup table at the bottom
+- lookup: course
+  examples: |
+    - B.Tech (Computer Science & Engineering)
+    - Computer Science & Engineering
+    - B.Tech CSE
+    - CSE
+    - B.Tech (Information Technology)
+    - Information Technology
+    - B.Tech IT
+    - IT
+    - B.Tech (CSE - Artificial Intelligence & Machine Learning)
+    - AI & ML
+    - Artificial Intelligence
+    - B.Tech (CSE - Data Science)
+    - Data Science
+    - B.Tech (Electronics and Communication Engineering)
+    - Electronics and Communication
+    - B.Tech ECE
+    - ECE
+    - B.Tech (Civil Engineering)
+    - Civil Engineering
+    - Civil
+    - B.Tech (Electrical Engineering)
+    - Electrical Engineering
+    - EE
+    - B.Tech (Electrical & Electronics Engineering)
+    - Electrical & Electronics Engineering
+    - EEE
+    - B.Tech (Mechanical Engineering)
+    - Mechanical Engineering
+    - Mechanical
+    - Bachelor of Computer Applications
+    - BCA
+    - M.Sc (Physics)
+    - MSc Physics
+    - M.Sc (Chemistry)
+    - MSc Chemistry
+    - M.Sc (Mathematics)
+    - MSc Mathematics
+    - M.Sc (Computer Science)
+    - MSc Computer Science
+    - MSc CS
+    - M.Sc (Data Science)
+    - MSc Data Science
+    - M.Sc (Biotechnology)
+    - MSc Biotechnology
+    - MBA
+    - MBA Finance
+    - MBA HR
+    - MBA Marketing
+    - Master of Computer Applications
+    - MCA
+    - M.Tech (Computer Science and Engineering)
+    - M.Tech CSE
+    - M.Tech (Electronics and Communication Engineering)
+    - M.Tech ECE
+    - M.Tech (VLSI and Embedded Systems Design)
+    - M.Tech VLSI
+    - VLSI
+    - M.Tech (Wireless Communication Technology)
+    - M.Tech Wireless
+    - M.Tech (Construction Technology & Management)
+    - M.Tech CTM
+    - M.Tech (Thermal Engineering)
+    - M.Tech Thermal
+    - PhD
+# Also, add these new intents to your nlu.yml
+- intent: ask_duration
+  examples: |
+    - How long is the [BCA](course) program?
+    - What is the duration of the [MBA](course)?
+    - duration for [B.Tech CSE](course)
+    - course length for [M.Tech](course)
+    - how many years is [mca](course)
+    - [mca](course) duration
+    - what is the [phd](course) duration
+- intent: ask_level
+  examples: |
+    - Is [B.Tech](course) an undergraduate course?
+    - What level is the [PhD](course) program?
+    - postgraduate or undergraduate for [MSc](course)?
+    - is [mca](course) a masters program
+    - program level for [bca](course)

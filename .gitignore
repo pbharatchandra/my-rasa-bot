@@ -1,0 +1,22 @@
+# Ignore virtual environment
+.venv/
+venv/
+
+# Ignore Rasa cache
+.rasa/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment and local db/logs
+.env
+*.db
+*.log
+
+# Ignore node files (if you used js frontend)
+node_modules/
+dist/
+
+# Ignore Rasa models
+**/models

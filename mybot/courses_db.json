@@ -1,0 +1,153 @@
+{
+  "btech_cse": {
+    "name": "B.Tech (Computer Science & Engineering)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,80,000 (1st Year), ₹1,74,000 (2nd-4th Year)"
+  },
+  "btech_it": {
+    "name": "B.Tech (Information Technology)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,80,000 (1st Year), ₹1,74,000 (2nd-4th Year)"
+  },
+  "btech_cse_ai_ml": {
+    "name": "B.Tech (CSE - Artificial Intelligence & Machine Learning)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,80,000 (1st Year), ₹1,74,000 (2nd-4th Year)"
+  },
+  "btech_cse_ds": {
+    "name": "B.Tech (CSE - Data Science)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,80,000 (1st Year), ₹1,74,000 (2nd-4th Year)"
+  },
+  "btech_ece": {
+    "name": "B.Tech (Electronics and Communication Engineering)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,69,000 (1st Year), ₹1,63,000 (2nd-4th Year)"
+  },
+  "btech_civil": {
+    "name": "B.Tech (Civil Engineering)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,32,000 (1st Year), ₹1,26,000 (2nd-4th Year)"
+  },
+  "btech_ee": {
+    "name": "B.Tech (Electrical Engineering)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,32,000 (1st Year), ₹1,26,000 (2nd-4th Year)"
+  },
+  "btech_eee": {
+    "name": "B.Tech (Electrical & Electronics Engineering)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,32,000 (1st Year), ₹1,26,000 (2nd-4th Year)"
+  },
+  "btech_mech": {
+    "name": "B.Tech (Mechanical Engineering)",
+    "duration": "4 years",
+    "level": "Undergraduate",
+    "admission": "NISTEE/ JEE Main",
+    "fee": "₹1,32,000 (1st Year), ₹1,26,000 (2nd-4th Year)"
+  },
+  "bca": {
+    "name": "Bachelor of Computer Applications (BCA)",
+    "duration": "3 years",
+    "level": "Undergraduate",
+    "admission": "Merit-based",
+    "fee": "₹56,000 (1st Year), ₹55,000 (2nd-3rd Year)"
+  },
+  "msc_physics": {
+    "name": "M.Sc (Physics)", "duration": "2 years", "level": "Postgraduate", "admission": "NISTEE/SAMS", "fee": "₹60,000 (1st Year), ₹59,000 (2nd Year)"
+  },
+  "msc_chemistry": {
+    "name": "M.Sc (Chemistry)", "duration": "2 years", "level": "Postgraduate", "admission": "NISTEE/SAMS", "fee": "₹60,000 (1st Year), ₹59,000 (2nd Year)"
+  },
+  "msc_math": {
+    "name": "M.Sc (Mathematics)", "duration": "2 years", "level": "Postgraduate", "admission": "NISTEE/SAMS", "fee": "₹60,000 (1st Year), ₹59,000 (2nd Year)"
+  },
+  "msc_cs": {
+    "name": "M.Sc (Computer Science)", "duration": "2 years", "level": "Postgraduate", "admission": "NISTEE/SAMS", "fee": "₹60,000 (1st Year), ₹59,000 (2nd Year)"
+  },
+  "msc_ds": {
+    "name": "M.Sc (Data Science)", "duration": "2 years", "level": "Postgraduate", "admission": "NISTEE/SAMS", "fee": "₹60,000 (1st Year), ₹59,000 (2nd Year)"
+  },
+  "msc_biotech": {
+    "name": "M.Sc (Biotechnology)", "duration": "2 years", "level": "Postgraduate", "admission": "NISTEE/SAMS", "fee": "₹60,000 (1st Year), ₹59,000 (2nd Year)"
+  },
+  "mba": {
+    "name": "MBA (Finance, HR, Marketing, Production and Operations)",
+    "duration": "2 years",
+    "level": "Postgraduate",
+    "admission": "NISTEE/CAT/MAT",
+    "fee": "₹1,51,000 (1st Year), ₹1,45,000 (2nd Year)"
+  },
+  "mca": {
+    "name": "Master of Computer Applications (MCA)",
+    "duration": "2 years",
+    "level": "Postgraduate",
+    "admission": "NIST Entrance Examination (NISTEE)",
+    "fee": "₹1,21,000 (1st Year), ₹1,15,000 (2nd Year)"
+  },
+  "mtech_cse": {
+    "name": "M.Tech (Computer Science and Engineering)",
+    "duration": "2 years",
+    "level": "Postgraduate",
+    "admission": "NISTEE/GATE Score",
+    "fee": "₹91,000 (1st Year), ₹75,000 (2nd Year)"
+  },
+  "mtech_ece": {
+    "name": "M.Tech (Electronics and Communication Engineering)",
+    "duration": "2 years",
+    "level": "Postgraduate",
+    "admission": "NISTEE/GATE Score",
+    "fee": "₹91,000 (1st Year), ₹75,000 (2nd Year)"
+  },
+  "mtech_vlsi": {
+    "name": "M.Tech (VLSI and Embedded Systems Design)",
+    "duration": "2 years",
+    "level": "Postgraduate",
+    "admission": "NISTEE/GATE Score",
+    "fee": "₹91,000 (1st Year), ₹75,000 (2nd Year)"
+  },
+  "mtech_wireless": {
+    "name": "M.Tech (Wireless Communication Technology)",
+    "duration": "2 years",
+    "level": "Postgraduate",
+    "admission": "NISTEE/GATE Score",
+    "fee": "₹91,000 (1st Year), ₹75,000 (2nd Year)"
+  },
+  "mtech_ctm": {
+    "name": "M.Tech (Construction Technology & Management)",
+    "duration": "2 years",
+    "level": "Postgraduate",
+    "admission": "NISTEE/GATE Score",
+    "fee": "₹91,000 (1st Year), ₹75,000 (2nd Year)"
+  },
+  "mtech_thermal": {
+    "name": "M.Tech (Thermal Engineering)",
+    "duration": "2 years",
+    "level": "Postgraduate",
+    "admission": "NISTEE/GATE Score",
+    "fee": "₹91,000 (1st Year), ₹75,000 (2nd Year)"
+  },
+  "phd": {
+    "name": "PhD (All Specializations)",
+    "duration": "Minimum 3 years",
+    "level": "Doctorate",
+    "admission": "NISTEE",
+    "fee": "₹61,000 (1st Year), ₹45,000 (2nd Year onwards)"
+  }
+}

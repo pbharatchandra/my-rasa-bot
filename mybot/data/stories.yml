@@ -1,0 +1,34 @@
+version: "3.1"
+stories:
+- story: User asks for general admission info
+  steps:
+  - intent: ask_admission
+    entities: [] # This story only runs if NO course is mentioned
+  - action: utter_admission
+
+- story: User asks for general fee info
+  steps:
+  - intent: ask_fees
+    entities: [] # This story only runs if NO course is mentioned
+  - action: utter_fees
+
+- story: Fee inquiry with clarification (multi-turn)
+  steps:
+  - intent: ask_fees
+    entities: []
+  - action: utter_fees
+  - intent: ask_course_details
+    entities:
+    - course: "B.Tech"
+  - action: action_show_course_info
+
+- story: Happy path with greeting and specific course question
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_course_details
+    entities:
+    - course: "MBA"
+  - action: action_show_course_info
+  - intent: goodbye
+  - action: utter_goodbye
